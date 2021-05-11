@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <main class="container">
+      <!-- Present Dates -->
+      <div class="present__day">
+        <h2 class="weekday">Today</h2>
+        <p class="date" id="get__date"></p>
+      </div>
+
+      <!-- Country & City -->
+      <h3 class="city"></h3>
+
+      <!-- Main Weather Values -->
+      <div class="weather">
+        <img src="#" alt="" class="weather__icon" id="weather__icon" />
+
+        <h2 class="weather__temp"></h2>
+
+        <p class="weather__desc">
+          <span id="weather__main"></span><br /><span id="weather__desc"></span>
+        </p>
+
+        <p class="weather__temps">
+          <span id="temp__min"></span> &#8451; /
+          <span id="temp__max"></span> &#8451;
+        </p>
+
+        <p class="weather__pressure">
+          Pressure:
+          <span id="weather__pressure"></span>
+        </p>
+
+        <p class="weather__humidity">
+          Humidity:
+          <span id="weather__humidity"></span>%
+        </p>
+      </div>
+
+      <!-- Get city form input -->
+      <form id="input__form">
+        <input type="text" id="input__city" placeholder="Type city name.." />
+      </form>
+    </main>
+
+    <!-- JS -->
+    <script src="./app.js"></script>
+  </body>
+</html>
